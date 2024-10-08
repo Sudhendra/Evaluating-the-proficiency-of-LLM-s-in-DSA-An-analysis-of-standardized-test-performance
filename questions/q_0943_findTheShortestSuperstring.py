@@ -1,0 +1,42 @@
+front_matter = {
+    "qid": 943,
+    "title": "Find the Shortest Superstring",
+    "titleSlug": "find-the-shortest-superstring",
+    "difficulty": "Hard",
+    "tags": ["Array", "String", "Dynamic Programming", "Bit Manipulation", "Bitmask"],
+}
+# ====================== DO NOT EDIT ABOVE THIS LINE ======================
+class Solution:
+    """Given an array of strings `words`, return *the smallest string that contains each string in* `words` *as a substring*. If there are multiple valid strings of the smallest length, return **any of them**.
+
+    You may assume that no string in `words` is a substring of another string in `words`.
+
+
+
+    **Example 1:**
+
+    ```
+    Input: words = ["alex","loves","leetcode"]
+    Output: "alexlovesleetcode"
+    Explanation: All permutations of "alex","loves","leetcode" would also be accepted.
+    ```
+    **Example 2:**
+
+    ```
+    Input: words = ["catg","ctaagt","gcta","ttca","atgcatc"]
+    Output: "gctaagttcatgcatc"
+    ```
+
+
+    **Constraints:**
+
+    * `1 <= words.length <= 12`
+    * `1 <= words[i].length <= 20`
+    * `words[i]` consists of lowercase English letters.
+    * All the strings of `words` are **unique**.
+    """
+
+    def shortestSuperstring(self, words: List[str]) -> str:
+        pass
+
+    # If you have multiple solutions, add them all here as methods of the same class.

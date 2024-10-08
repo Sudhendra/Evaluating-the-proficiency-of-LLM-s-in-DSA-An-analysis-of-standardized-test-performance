@@ -1,0 +1,121 @@
+import pytest
+from q_1255_maximumScoreWordsFormedByLetters import Solution
+
+
+@pytest.mark.parametrize(
+    "words, letters, score, output",
+    [
+        (
+            ["dog", "cat", "dad", "good"],
+            ["a", "a", "c", "d", "d", "d", "g", "o", "o"],
+            [
+                1,
+                0,
+                9,
+                5,
+                0,
+                0,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+            ],
+            23,
+        ),
+        (
+            ["xxxz", "ax", "bx", "cx"],
+            ["z", "a", "b", "c", "x", "x", "x"],
+            [
+                4,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5,
+                0,
+                10,
+            ],
+            27,
+        ),
+        (
+            ["leetcode"],
+            ["l", "e", "t", "c", "o", "d"],
+            [
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+            ],
+            0,
+        ),
+    ],
+)
+class TestSolution:
+    def test_maxScoreWords(
+        self, words: List[str], letters: List[str], score: List[int], output: int
+    ):
+        sc = Solution()
+        assert (
+            sc.maxScoreWords(
+                words,
+                letters,
+                score,
+            )
+            == output
+        )
